@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!--  meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="index.css">
+
+        <title>Inativar</title>
+    </head>
+    <body>
+        <!-- The core Firebase JS SDK is always  and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-messaging.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-functions.js"></script>
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDk8Fuq9v8wUR8qFAROChz9Ofm1z4CDDAk",
+            authDomain: "cadastrotopmed.firebaseapp.com",
+            // authDomain: "https://gutiguim.github.io/alex-cadastro/",
+            databaseURL: "https://cadastrotopmed.firebaseio.com",
+            projectId: "cadastrotopmed",
+            storageBucket: "cadastrotopmed.appspot.com",
+            messagingSenderId: "302170733983",
+            appId: "1:302170733983:web:821d3d2d9d3261894451aa"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        </script>
+                    <main class="my-form">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-8">
+                                            <div class="card rounded-top-left rounded-bottom-right">
+                                                <div class="img-fluid padding-image">
+                                                    <h1>TOP 10 FAMILY</h1>
+                                                </div>
+                                                <div class="card-body">
+                                                    <label for="list" class="col-md-12 col-form-label text-md-left">Lista de usuários cadastrados ativos</label>
+                                                    <div class="col-md-12">
+                                                        <Select id="list" class="form-control" name="list">
+                                                            <option value="" selected>Escolha...</option>
+                                                        </Select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 offset-md-4">
+                                                    <button onclick="showData()" class="btn btn-primary">
+                                                        Mostrar
+                                                    </button>
+                                                    <button onclick="sendData()" class="btn btn-primary">
+                                                        Inativar
+                                                    </button>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-8">
+                                                <div class="card rounded-top-left rounded-bottom-right">
+                                                    <div class="card-body">
+                                                        <label for="list_inactive" class="col-md-12 col-form-label text-md-left">Lista de usuários cadastrados inativos</label>
+                                                        <div class="col-md-12">
+                                                            <Select id="list_inactive" class="form-control" name="list_inactive">
+                                                                <option value="" selected>Escolha...</option>
+                                                            </Select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 offset-md-4">
+                                                        <button onclick="showDataActivate()" class="btn btn-primary">
+                                                            Mostrar
+                                                        </button>
+                                                        <button onclick="sendDataActivate()" class="btn btn-primary">
+                                                            Ativar
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <!-- <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-8">
+                                            <div class="card rounded-top-left rounded-bottom-right">
+                                                <button onclick="executar()" class="btn btn-primary">
+                                                    Teste
+                                                </button>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        
+                    </main>
+                    <!-- Footer -->
+                    <footer class="footer">
+                        <div class="container justify-content-center text-center">
+                          <span class="text-muted font-type">Comercialização Sou Seguros Administradora de Seguros | CNPJ: 25.281.864/0001-50 | SUSEP: 10.2034785.5</span>
+                          <p class="text-muted font-type">Atendimento | CNPJ/MF nº 05.791.085/0001-97</p>
+                        </div>
+                    </footer>
+                    <!-- Footer -->
+                    
+            
+                    <!-- Optional JavaScript -->
+                    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+                    <script src="index.js"></script>
+                    <!-- <script src="dist/jquery.inputmask.js"></script>
+                    <script src="dist/bindings/inputmask.binding.js"></script> -->
+                </body>
+</html>
