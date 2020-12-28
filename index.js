@@ -215,7 +215,7 @@ function deactivate (data) {
     var xhr = new XMLHttpRequest();
     xhr.open('POST', 'https://cors-anywhere.herokuapp.com/http://lifemanager.nextplus.com.br:9095/lifemanagerapi/lmapi/cadastro', true);
     xhr.setRequestHeader("Content-Type", "application/json; charset=utf-8");
-    xhr.setRequestHeader('Authorization', 'Bearer ' + 'Xs-mxh7mDOTrVxcDdxayQQNLCDtsxlb4ppH14eLFEOZLSnmkHJdoClyCXRRQQ6NZ9hv2yARGFjaAkHQM8gxcJBbPPe1KxzLDHgbHVL3ZDwe5brAdRTZFIJ8XHplSiOXHWZpZUEp-CsgBTymP2v5DMoPl6Z8YxVduXKvUazrvREFNmQUjfY8aO8I3ay0Pt_KsObIUg8DckNGUvQwDn1hl8sei5kFAL7nFCuNGfM7-wLKwqnuPMLjA2F_nlGeDEg_vQAANl6P0toZz14mBHEjFIFjZWs4NL4zdiEXuipa3Cs910xT-GE4oJPaxHfNGEqFL');
+    xhr.setRequestHeader('Authorization', 'Bearer ' + '0jWcfyw8HVbconen-hO_YNltPRWPrSm9owXmuSi5bcukcJZ5Y9qWvFVtn1ISiyCvh_o_m4axvyNNZUJ8jrXEjaP3nS1ripvNMHXLxkbus_t_Ngf3DKEv_KDuUOMxW-MGUUb1OKCptlOKuLhhKLhhBi0gQcrJa0Kmx15TDwg7p5uLrhy4p48Cw4Gia_OZQuMs1HTksihM_hP9qACKp2Q5WjperWrrRYylpY_oLbESAVKzXIGvO1kuJxfUUmmWkhdLsKJ_qAHvBE_gfNLPPCth38hQt1ViOxnY7dsRsITjz1FdgCdl5nR7-6xLiN1L0AwH');
     xhr.send(jsonString);
     // alert("Sucesso");
 
@@ -304,7 +304,7 @@ function activate (data) {
     var xhr = new XMLHttpRequest();
     xhr.open('POST', 'https://cors-anywhere.herokuapp.com/http://lifemanager.nextplus.com.br:9095/lifemanagerapi/lmapi/cadastro', true);
     xhr.setRequestHeader("Content-Type", "application/json; charset=utf-8");
-    xhr.setRequestHeader('Authorization', 'Bearer ' + 'Xs-mxh7mDOTrVxcDdxayQQNLCDtsxlb4ppH14eLFEOZLSnmkHJdoClyCXRRQQ6NZ9hv2yARGFjaAkHQM8gxcJBbPPe1KxzLDHgbHVL3ZDwe5brAdRTZFIJ8XHplSiOXHWZpZUEp-CsgBTymP2v5DMoPl6Z8YxVduXKvUazrvREFNmQUjfY8aO8I3ay0Pt_KsObIUg8DckNGUvQwDn1hl8sei5kFAL7nFCuNGfM7-wLKwqnuPMLjA2F_nlGeDEg_vQAANl6P0toZz14mBHEjFIFjZWs4NL4zdiEXuipa3Cs910xT-GE4oJPaxHfNGEqFL');
+    xhr.setRequestHeader('Authorization', 'Bearer ' + '0jWcfyw8HVbconen-hO_YNltPRWPrSm9owXmuSi5bcukcJZ5Y9qWvFVtn1ISiyCvh_o_m4axvyNNZUJ8jrXEjaP3nS1ripvNMHXLxkbus_t_Ngf3DKEv_KDuUOMxW-MGUUb1OKCptlOKuLhhKLhhBi0gQcrJa0Kmx15TDwg7p5uLrhy4p48Cw4Gia_OZQuMs1HTksihM_hP9qACKp2Q5WjperWrrRYylpY_oLbESAVKzXIGvO1kuJxfUUmmWkhdLsKJ_qAHvBE_gfNLPPCth38hQt1ViOxnY7dsRsITjz1FdgCdl5nR7-6xLiN1L0AwH');
     xhr.send(jsonString);
     // alert("Sucesso");
 
