@@ -92,7 +92,7 @@ function showData() {
             })
             reader.readAsText(blob);
         };
-        xhr.open('GET', 'https://cors-anywhere.herokuapp.com/' + url);
+        xhr.open('GET', 'https://thingproxy.freeboard.io/fetch/' + url);
         xhr.send();
       
       }).catch(function(error) {
@@ -121,7 +121,7 @@ function showDataActivate() {
             })
             reader.readAsText(blob);
         };
-        xhr.open('GET', 'https://cors-anywhere.herokuapp.com/' + url);
+        xhr.open('GET', 'https://thingproxy.freeboard.io/fetch/' + url);
         xhr.send();
       
       }).catch(function(error) {
@@ -160,7 +160,7 @@ function sendData() {
             })
             reader.readAsText(blob);
         };
-        xhr.open('GET', 'https://cors-anywhere.herokuapp.com/' + url);
+        xhr.open('GET', 'https://thingproxy.freeboard.io/fetch/' + url);
         xhr.send();
       
       }).catch(function(error) {
@@ -198,7 +198,7 @@ function sendDataActivate() {
             })
             reader.readAsText(blob);
         };
-        xhr.open('GET', 'https://cors-anywhere.herokuapp.com/' + url);
+        xhr.open('GET', 'https://thingproxy.freeboard.io/fetch/' + url);
         xhr.send();
       
       }).catch(function(error) {
@@ -213,9 +213,9 @@ function deactivate (data) {
     var jsonString = JSON.stringify(usuario, undefined, 2);
 
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'https://cors-anywhere.herokuapp.com/http://lifemanager.nextplus.com.br:9095/lifemanagerapi/lmapi/cadastro', true);
+    xhr.open('POST', 'https://thingproxy.freeboard.io/fetch/http://lifemanager.nextplus.com.br:9095/lifemanagerapi/lmapi/cadastro', true);
     xhr.setRequestHeader("Content-Type", "application/json; charset=utf-8");
-    xhr.setRequestHeader('Authorization', 'Bearer ' + '0jWcfyw8HVbconen-hO_YNltPRWPrSm9owXmuSi5bcukcJZ5Y9qWvFVtn1ISiyCvh_o_m4axvyNNZUJ8jrXEjaP3nS1ripvNMHXLxkbus_t_Ngf3DKEv_KDuUOMxW-MGUUb1OKCptlOKuLhhKLhhBi0gQcrJa0Kmx15TDwg7p5uLrhy4p48Cw4Gia_OZQuMs1HTksihM_hP9qACKp2Q5WjperWrrRYylpY_oLbESAVKzXIGvO1kuJxfUUmmWkhdLsKJ_qAHvBE_gfNLPPCth38hQt1ViOxnY7dsRsITjz1FdgCdl5nR7-6xLiN1L0AwH');
+    xhr.setRequestHeader('Authorization', 'Bearer ' + '4_QBZCrrHPViIApVTWsbNe3mE6nz8jbXZ-EwtzGfCgD1uxHqGDo6hlrnpwoWYLCR7pNuCYJm6zLAHSc3bpBKCO7MMINVydUVBsvzNKytEdwaAQvRtHW8BbgKqiS7nttqVTIdezitdMCkpc0oRtXuBppxbc-lti2TSyNagb5qa4FD7hQ0y6v8PE_USCt1dxC9bBklQKPy313CPj9aMLJOqqX9FBeszTM9yjnTbDhssFlF2dwswPxv7voPtRUf23ecjRRo2v6zTg2YeC6Veo8kA78e_VJf_13jABZOj9lmZmHcWGrGf4PQndT9qZl6irXh');
     xhr.send(jsonString);
     // alert("Sucesso");
 
@@ -258,7 +258,7 @@ function deactivate (data) {
                 })
                 reader.readAsText(blob);
             };
-            xhr.open('GET', 'https://cors-anywhere.herokuapp.com/' + url);
+            xhr.open('GET', 'https://thingproxy.freeboard.io/fetch/' + url);
             xhr.send();
           
           }).catch(function(error) {
@@ -286,7 +286,7 @@ function deactivate (data) {
                 })
                 reader.readAsText(blob);
             };
-            xhr.open('GET', 'https://cors-anywhere.herokuapp.com/' + url);
+            xhr.open('GET', 'https://thingproxy.freeboard.io/fetch/' + url);
             xhr.send();
           
           }).catch(function(error) {
@@ -302,9 +302,9 @@ function activate (data) {
     var jsonString = JSON.stringify(usuario, undefined, 2);
 
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'https://cors-anywhere.herokuapp.com/http://lifemanager.nextplus.com.br:9095/lifemanagerapi/lmapi/cadastro', true);
+    xhr.open('POST', 'https://thingproxy.freeboard.io/fetch/http://lifemanager.nextplus.com.br:9095/lifemanagerapi/lmapi/cadastro', true);
     xhr.setRequestHeader("Content-Type", "application/json; charset=utf-8");
-    xhr.setRequestHeader('Authorization', 'Bearer ' + '0jWcfyw8HVbconen-hO_YNltPRWPrSm9owXmuSi5bcukcJZ5Y9qWvFVtn1ISiyCvh_o_m4axvyNNZUJ8jrXEjaP3nS1ripvNMHXLxkbus_t_Ngf3DKEv_KDuUOMxW-MGUUb1OKCptlOKuLhhKLhhBi0gQcrJa0Kmx15TDwg7p5uLrhy4p48Cw4Gia_OZQuMs1HTksihM_hP9qACKp2Q5WjperWrrRYylpY_oLbESAVKzXIGvO1kuJxfUUmmWkhdLsKJ_qAHvBE_gfNLPPCth38hQt1ViOxnY7dsRsITjz1FdgCdl5nR7-6xLiN1L0AwH');
+    xhr.setRequestHeader('Authorization', 'Bearer ' + '4_QBZCrrHPViIApVTWsbNe3mE6nz8jbXZ-EwtzGfCgD1uxHqGDo6hlrnpwoWYLCR7pNuCYJm6zLAHSc3bpBKCO7MMINVydUVBsvzNKytEdwaAQvRtHW8BbgKqiS7nttqVTIdezitdMCkpc0oRtXuBppxbc-lti2TSyNagb5qa4FD7hQ0y6v8PE_USCt1dxC9bBklQKPy313CPj9aMLJOqqX9FBeszTM9yjnTbDhssFlF2dwswPxv7voPtRUf23ecjRRo2v6zTg2YeC6Veo8kA78e_VJf_13jABZOj9lmZmHcWGrGf4PQndT9qZl6irXh');
     xhr.send(jsonString);
     // alert("Sucesso");
 
